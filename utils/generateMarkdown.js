@@ -1,3 +1,4 @@
+// https://www.youtube.com/watch?v=o8hkjz1TQuQ
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
@@ -11,8 +12,13 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
+// https://www.digitalocean.com/community/tutorials/understanding-template-literals-in-javascript
+// With template literals, an expression can be embedded in a placeholder. A placeholder is represented by ${}, with anything within the curly brackets treated as JavaScript and anything outside the brackets treated as a string:
 function generateMarkdown(data) {
   return `# ${data.projectTitle}
+
+  [![license](https://img.shields.io/badge/License-${data.license}-blueviolet)](https://shields.io)
+
   ## Description
   ${data.description}
 
@@ -40,6 +46,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
+  For questions, contact me at:
   - Github:
   [${data.github}](http://github.com/${data.github})
   - Email:

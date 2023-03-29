@@ -17,11 +17,11 @@ const readmePrompts = [
     default: "Description"},
 
     {name: "installation",
-    message: "Installation:",
+    message: "Installation instructions:",
     default: ""},
 
     {name: "usage",
-    message: "Usage:",
+    message: "Usage information:",
     default: ""},
 
     {type: "checkbox",
@@ -31,11 +31,11 @@ const readmePrompts = [
     validate:(value) => {if (value){return true}else {return "Please select a license."}}},
 
     {name: "contributing",
-    message: "Contributing:",
+    message: "Contribution guidelines:",
     default: ""},
 
     {name: "tests",
-    message: "Tests:",
+    message: "Test instructions:",
     default: ""},
 
     {name: "github",
